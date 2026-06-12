@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ads Results - ACCESS</title>
+<meta name="description" content="ACCESS Ads Results - Real advertising campaign performance and marketing results">
+<meta name="robots" content="index, follow">
+<style>
+
+body{
+margin:0;
+background:#0a0a0a;
+font-family:Arial;
+color:white;
+}
+
+
+header{
+text-align:center;
+padding:20px;
+}
+
+header img{
+width:120px;
+border-radius:15px;
+box-shadow:0 0 15px #0d6efd;
+}
+
+
+h1{
+text-align:center;
+color:#0d6efd;
+letter-spacing:3px;
+margin-bottom:30px;
+}
+
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(5, 1fr);
+gap:10px;
+padding:20px;
+}
+
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:contain;
+background:#111;
+border-radius:12px;
+box-shadow:0 0 10px rgba(13,110,253,0.4);
+transition:.3s;
+cursor:pointer;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px #0d6efd;
+}
+
+
+@media(max-width:1200px){
+.gallery{grid-template-columns:repeat(3, 1fr);}
+}
+
+@media(max-width:700px){
+.gallery{grid-template-columns:repeat(2, 1fr);}
+}
+
+@media(max-width:500px){
+.gallery{grid-template-columns:repeat(1, 1fr);}
+}
+
+
+#lightbox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.92);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+
+#lightbox img{
+max-width:90%;
+max-height:90%;
+border-radius:10px;
+box-shadow:0 0 20px #000;
+}
+
+
+#closeBtn{
+position:absolute;
+top:20px;
+right:30px;
+font-size:45px;
+color:white;
+cursor:pointer;
+font-weight:bold;
+transition:.2s;
+}
+
+#closeBtn:hover{
+color:red;
+transform:scale(1.2);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="IMG-20260606-WA0022.jpg">
+</header>
+
+<h1>ADS RESULTS</h1>
+
+
+<div class="gallery">
+
+<img src="Photo/A/a-2.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-3.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-4.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-5.jpg" onclick="openLightbox(this)">
+
+<img src="Photo/A/a-6.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-7.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-8.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-9.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-10.jpg" onclick="openLightbox(this)">
+
+<img src="Photo/A/a-11.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-12.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-13.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-14.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-15.jpg" onclick="openLightbox(this)">
+
+<img src="Photo/A/a-16.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-17.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-18.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-19.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-20.jpg" onclick="openLightbox(this)">
+
+<img src="Photo/A/a-21.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-22.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-23.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-24.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-25.jpg" onclick="openLightbox(this)">
+
+<img src="Photo/A/a-26.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-27.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-28.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-29.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-30.jpg" onclick="openLightbox(this)">
+
+<img src="Photo/A/a-31.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-32.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-33.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-34.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-35.jpg" onclick="openLightbox(this)">
+
+<img src="Photo/A/a-36.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-37.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-38.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-39.jpg" onclick="openLightbox(this)">
+<img src="Photo/A/a-40.jpg" onclick="openLightbox(this)">
+
+</div>
+
+
+<div id="lightbox">
+  <span id="closeBtn" onclick="closeLightbox()">×</span>
+  <img id="lightbox-img">
+</div>
+
+<script>
+function openLightbox(img){
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = img.src;
+}
+
+function closeLightbox(){
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+</html>

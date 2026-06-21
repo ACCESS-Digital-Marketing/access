@@ -4,5 +4,6 @@ Disallow: /admin/
 Disallow: /.git/
 Disallow: /.env
 Disallow: /wp-config
+Disallow: https://access-4t1.pages.dev/.git/
 
 Sitemap: https://access-4t1.pages.dev/sitemap.xml

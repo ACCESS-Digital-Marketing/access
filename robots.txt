@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /wp-config
 
 Sitemap: https://access-4t1.pages.dev/sitemap.xml
